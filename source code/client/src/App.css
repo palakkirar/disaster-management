@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+/* ===== HEADER ===== */
+
+h1 {
+  background: #0f172a;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  font-size: 38px;
+}
+
+/* ===== HEADINGS ===== */
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+  color: #0f766e;
+}
+
+h3 {
+  color: #0f766e;
+  margin-bottom: 12px;
+}
+
+/* ===== NAVIGATION BAR ===== */
+
+nav {
+  background: #134e4a;
+  padding: 18px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #facc15;
+}
+
+/* ===== HOME SECTION ===== */
+
+#home {
+  background: linear-gradient(
+    135deg,
+    #ccfbf1,
+    #e0f2fe
+  );
+  padding: 60px 25px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 1100px;
+  border-radius: 15px;
+}
+
+#home h2 {
+  font-size: 32px;
+  color: #0f172a;
+}
+
+#home p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 20px 0;
+}
+
+#home a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 14px 28px;
+  background: #0f766e;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+#home a:hover {
+  background: #115e59;
+}
+
+/* ===== GENERAL SECTIONS ===== */
+
+section {
+  padding: 35px 20px;
+  margin: 25px auto;
+  max-width: 1100px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px #00000015;
+}
+
+section p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 12px 0;
+}
+
+/* ===== DISASTER INFORMATION ===== */
+
+.disasters {
+  padding: 50px 30px;
+}
+
+.section-intro {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+.disaster-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.disaster-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 5px 15px #00000010;
+  transition: 0.3s;
+}
+
+.disaster-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px #00000020;
+}
+
+.disaster-icon {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.disaster-card h3 {
+  font-size: 24px;
+  color: #0f766e;
+  margin-bottom: 12px;
+}
+
+.disaster-card p {
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.disaster-card a {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #0f766e;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.disaster-card a:hover {
+  background: #134e4a;
+}
+
+/* ===== SAFETY GUIDELINES ===== */
+
+#safety {
+  background: #ecfdf5;
+  padding: 40px;
+}
+
+#safety p {
+  background: white;
+  padding: 15px;
+  border-left: 5px solid #0f766e;
+  border-radius: 6px;
+  margin: 15px 0;
+}
+
+/* ===== EMERGENCY CONTACTS ===== */
+
+#contacts {
+  background: #fff7ed;
+  padding: 40px;
+}
+
+#contacts p {
+  background: white;
+  padding: 15px;
+  margin: 12px auto;
+  max-width: 500px;
+  border-radius: 8px;
+  border-left: 5px solid #ea580c;
+  font-weight: bold;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+  background: #0f172a;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 27px;
+    padding: 20px;
+  }
+
+  nav {
+    padding: 15px 5px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px;
+    font-size: 14px;
+  }
+
+  #home {
+    padding: 35px 15px;
+  }
+
+  #home h2 {
+    font-size: 25px;
+  }
+
+  .disaster-container {
+    grid-template-columns: 1fr;
+  }
+
+  .disaster-card {
+    padding: 25px 20px;
+  }
+
+  section {
+    padding: 25px 15px;
+    margin: 15px;
+  }
+}

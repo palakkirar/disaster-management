@@ -15,7 +15,7 @@ function App() {
       </nav>
 
       <section id="home">
-        <h2>Be Aware. Be Prepared. Be Safe.</h2>
+        <h2>Be Aware. Be Prepared. Be Safe! </h2>
         <p>
           Learn about disasters and prepare yourself
           and your community for emergencies.

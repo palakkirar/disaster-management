@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <h1>DisasterReady</h1>
+      <h1>DisasterReady website</h1>
       <h2>Awareness and Preparedness Towards Disaster Management</h2>
 
       <nav>
